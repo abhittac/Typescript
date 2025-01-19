@@ -1,12 +1,14 @@
-function addTwo (num:number):{
-    return num+2
-
+function addTwo (num:number):number{
+    return num + 2
 }
-addTwo(2)
+
+
+
+let a= addTwo(2)
 
 // optional passing 
 
-function checkUser(name:string,age:number,isUser:boolean=false){
+function checkUser(name:string,age:number,isUser:boolean=false):any{
     return name+ 'age of '+age
 }
 
@@ -31,3 +33,5 @@ const handleException=(value:any):never=>{
     console.log('>',value)
     throw value
 }
+
+export {}
