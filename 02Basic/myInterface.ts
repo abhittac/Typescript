@@ -5,8 +5,12 @@ interface User{
     getPosition(name:string,salary:number):string
 }
 
-
-
+interface User{
+    age?:number
+}
+interface Student extends User {
+    student_name:string
+}
 const shubham :User={
     id:'sdsdsd',
     name:'hs',
@@ -17,4 +21,5 @@ const shubham :User={
         return `${username} earn ${income}`        
     },
 }
+
 console.log(shubham)
